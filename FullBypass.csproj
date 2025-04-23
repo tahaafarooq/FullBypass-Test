@@ -99,7 +99,7 @@
                                         amsiScanBuffer = baseAddress + i;
                                         Console.WriteLine("[+] Found AmsiScanBuffer function: 0x" + amsiScanBuffer.ToString("X"));
                                         res = false;
-                                        addrScanBuffer = true;
+                                        addrScanBuffer = true; // semi-colon added
                                         break;
                                     }
                                     if (fewBytes[j] == ret[j])
